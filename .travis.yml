@@ -1,9 +1,8 @@
 # This project has python as the main language
 language: python
-# Run things with both these version of Python
+# Run things in this python version:
 python: 
-- "2.7"
-- "3.4"
+- "3.6"
 # Don't send email notifications for everything...
 notifications: email: false
 # We get a bare virtual machine
@@ -13,4 +12,4 @@ notifications: email: false
 - pip install more-itertools
 # Run the tests
 script:
-- py.test
+- pytest
